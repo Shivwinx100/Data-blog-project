@@ -39,23 +39,24 @@ The link for blog post is https://medium.com/@shivangipatel255064/data-blog-proj
 1) Above graph show state wise total transaction, we just need to group them by state and sum up.
 
 
-State                           Transaction
-Azuay                              	5673847
-Bolivar                           	2107489
-Chimborazo	                        2287850
-Cotopaxi                           	3531356
-El Oro	                            3945341
-Esmeraldas                        	2182356
-Guayas	                            21894000
-Imbabura	                          2209898
-Loja	                              2867052
-Los Rios                            4049047
-Manabi                            	2906765
-Pastaza                            	504156
-Pichincha                         	74971545
-Santa Elena	                        1520362
-Santo Domingo de los Tsachilas  	  4655266
-Tungurahua	                        6172615
+|         State                 |   Transaction     |
+|-------------------------------|-------------------|
+|Azuay                          |    	5673847       | 
+|Bolivar                        |   	2107489       |
+|Chimborazo	                    |    2287850        |
+|Cotopaxi                       |    	3531356       |
+|El Oro	                        |    3945341        |
+|Esmeraldas                     |   	2182356       |
+|Guayas	                        |    21894000       |
+|Imbabura	                      |    2209898        |
+|Loja	                          |    2867052        |
+|Los Rios                       |     4049047       |
+|Manabi                         |   	2906765       |
+|Pastaza                        |    	504156        |
+|Pichincha                      |   	74971545      |
+|Santa Elena	                  |      1520362      |
+|Santo Domingo de los Tsachilas | 	  4655266       |
+|Tungurahua	                    |    6172615        |
 
 2) As per graph Pichincha satae has the highest with 74971545transaction and Pastaza state has the minimum with 504156 transactions.
 
