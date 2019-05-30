@@ -92,7 +92,7 @@ Santo Domingo
 
 5) For this question's answer we just need to gruop it by family and item number and gets its count.The answer is Baby Care, Home appliances and Books.
 
-![alt text](https://github.com/Shivwinx100/Data-blog-project/blob/master/pic3.png)
+![alt text](https://github.com/Shivwinx100/Data-blog-project/blob/master/pic4.png)
 
 6) For this we need to group it by week and get the total transaction. From above graph we conclude that 52 week has highest and 35 week has the minimun transaction recorded.
 
