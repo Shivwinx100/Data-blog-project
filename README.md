@@ -61,28 +61,31 @@ The link for blog post is https://medium.com/@shivangipatel255064/data-blog-proj
 2) As per graph Pichincha satae has the highest with 74971545transaction and Pastaza state has the minimum with 504156 transactions.
 
 3) For this we first need to merge the stores and holidays dataset then we need to find out those rows which fall under 2017 year and   has national holiday and its respective city, lastly We have to group by city to get list of the cities. As the result cities are 		
-Ambato
-Babahoyo
-Cayambe
-Cuenca
-Daule
-El Carmen
-Esmeraldas
-Guaranda
-Guayaquil	
-Ibarra	
-Latacunga
-Libertad
-Loja	
-Machala	
-Manta	
-Playas
-Puyo	
-Quevedo
-Quito	
-Riobamba
-Salinas	
-Santo Domingo
+
+|   Cities     |
+|--------------|
+|Ambato        |
+|Babahoyo      |
+|Cayambe       |
+|Cuenca        |
+|Daule         |
+|El Carmen     |
+|Esmeraldas    |
+|Guaranda      |
+|Guayaquil	   |
+|Ibarra	       |
+|Latacunga     |
+|Libertad      |
+|Loja	         |
+|Machala	     |
+|Manta	       |
+|Playas        |
+|Puyo	         |
+|Quevedo       |
+|Quito	       |
+|Riobamba      | 
+|Salinas	     |
+|Santo Domingo |
 
 ![alt text](https://github.com/Shivwinx100/Data-blog-project/blob/master/pic2.png)
 
