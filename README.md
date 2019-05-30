@@ -32,7 +32,7 @@ Here are the business questions that need to be answered:
 
 The link for blog post is https://medium.com/@shivangipatel255064/data-blog-project-udacity-8a1cbde23903. Datasets Link: https://www.kaggle.com/c/favorita-grocery-sales-forecasting.
 
-##Answers
+## Answers
 
 ![alt text](https://github.com/Shivwinx100/Data-blog-project/blob/master/pic1.png)
 
@@ -95,7 +95,9 @@ Santo Domingo
 ![alt text](https://github.com/Shivwinx100/Data-blog-project/blob/master/pic3.png)
 
 6) For this we need to group it by week and get the total transaction. From above graph we conclude that 52 week has highest and 35 week has the minimun transaction recorded.
-##Conclusion
+
+
+## Conclusion
 
 We have successfuly answer the all the Question. Most of the Question's answer was easily derivable from the graphs but for the count and preciseness we need to refer the output of the code.
 
