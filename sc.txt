@@ -1,0 +1,57 @@
+def read_services(in_sheet,out_sheet):
+  all_input_columns=get_input_columns(in_sheet)
+  output_set=output_column_load(all_input_columns)
+  Final_set=[]
+  for i_set in output_set:
+    df=i_set[0]   ###outputsheet dataframe
+    row_to_append=[]
+    matchers=["20'","40'"]
+    for sheet in in_sheet:
+      input_sheet=get_input_sheet(sheet,"sheet")
+      Effective_Start_Date,Effective_End_Date=get_dates(sheet)
+      for idx,row in enumerate(input_sheet.iterrows()):
+        dict_use=i_set[2]
+        for container_val in matchers:
+          values=[""]
+          for col in list(dict_use):
+            if dict_use[col] is not None:
+              val= "-" if pd.isna(row[dict_use[col]]) else row[dict_use[col]]
+              values.append(val)
+            elif col == "Valid From":
+              values.append(Effective_Start_Date)
+            elif col == "Valid to":
+              values.append(Effective_End_Date)
+            elif "Container" in col:
+              values.append(container_val)
+            elif col == "Price":
+              value.append(row[("Freight_"+container_val)])
+            elif any(str(col).lower() in str(xs).lower() for xs in input_sheet.columns):
+              if col in single_col:
+                index=[i for i,x in enumerate(input_sheet.columns) if col.lower() in x.lower()]
+                val=row[input_sheet.columns[index[0]]]
+              elif "Price" in list(dict_use):
+                val=("Freight="+col+"_"+container_val+"OT") if "OT" in col else ("Freight="+col+"_"+container_val)
+              else:
+                val=("Destination="+col+"_"+container_val)
+              values.append(("-" if type(row[value]) is not float or pd.isna(row[value]) else row[val]))
+            else:
+              values.append("-")
+          row_to_append.append(values)
+    df1=pd.DataFrame(row_to_append,columns=df.columns)
+    df=pd.concat([df,df1])
+    Final_set.append([df,i_set[1]])
+  return Final_set
+  
+final_set_dataframe=read_services(input_file,output_file)
+for i in final_set_dataframe:
+  final_dataframe=i[0]
+  df_to_excel(out_path,final_dataframe,i[1])
+    
+def df_to_excel(path,dataframe,name):
+  book=load_workbook(path)
+  writer=pd.ExcelWriter(path,engine="openpyxl")
+  writer.book=book
+  writer.sheets=dict((ws.title,ws) for ws in book.worksheets)
+  dataframe.to_excel(writer,sheet_name=name,header=None,index=False,startcol=0,startrow=7)
+  writer.save()
+  writer.close()
